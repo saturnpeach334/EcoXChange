@@ -84,14 +84,14 @@
                             <div class="logbox">
                                 <i class="fa fa-user" aria-hidden="true" ></i>
                                 <div class="linebox"></div>
-                                <input name="username" type="text" id="username" placeholder="Username" class="inputbox">
+                                <input name="username" type="text" id="username" placeholder="Username" class="inputbox" required>
                                
                             </div>
                             
                             <div class="logbox" >
                                 <i class="fa fa-envelope" aria-hidden="true" ></i></i>
                                 <div class="linebox"></div>
-                                <input name="email" type="email" id="email" placeholder="Email Address" class="inputbox">
+                                <input name="email" type="email" id="email" placeholder="Email Address" class="inputbox" required>
                                 
                             </div>
 
@@ -99,7 +99,7 @@
                             <div class="logbox" >
                                 <i class="fa fa-lock" aria-hidden="true" ></i></i>
                                 <div class="linebox"></div>
-                                <input name="password" type="password" id="password" placeholder="Create Password" class="inputbox password" >
+                                <input name="password" type="password" id="password" placeholder="Create Password" class="inputbox password" required>
                                 
                             </div>
 
@@ -107,7 +107,7 @@
                             <div class="logbox" >
                                 <i class="fa fa-lock" aria-hidden="true" ></i></i>
                                 <div class="linebox"></div>
-                                <input name="password2" type="password" id="password2" placeholder="Confirm Password" class="inputbox">
+                                <input name="password2" type="password" id="password2" placeholder="Confirm Password" class="inputbox"required>
                                 
                             </div>
                             
@@ -227,7 +227,7 @@
                 <p class="title"><span>Error:</span>
                   User action error
                 </p>
-                <p class="sub">Ops sorry, but this username has already been taken!</p>
+                <p class="sub">Ops sorry, but this username/email has already been taken!</p>
               </div>
               <div class="icon close">
                 <i class="bx bx-x" ></i>
@@ -260,29 +260,7 @@
         </div>
           ';
         }
-        else if($_GET["error"] == "none"){
-          echo '
-          <div class="alert_wrapper active1">
-          <div class="alert_backdrop"></div>
-          <div class="alert_inner">
-            <div class="alert_item alert_success">
-              <div class="icon data_icon">
-                <i class="bx bxs-check-circle" ></i>
-              </div>
-              <div class="data">
-                <p class="title"><span>Success:</span>
-                  User action success
-                </p>
-                <p class="sub">you have successfully Sign Up.</p>
-              </div>
-              <div class="icon close">
-                <i class="bx bx-x" ></i>
-              </div>
-            </div>
-          </div>
-        </div>
-          ';
-        }
+        
       }
 
       ?>
