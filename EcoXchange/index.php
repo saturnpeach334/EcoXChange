@@ -3,7 +3,8 @@
      Programmer : Melissa Sofia
 
      Page : HOME PAGE
-     Probem to check : z-index at navigation bar > try Order in CSS..
+     
+    
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -39,9 +40,6 @@
                     <li>
                         <a href="#faq">FAQ</a>
                     </li>
-                    <!-- <li>
-                        <a href="pages/groupMembers.html">Developer</a>
-                    </li> -->
                 </ul>
                 <div class="login-signup">
                     <a href="pages/Login.php">Log In</a>  
